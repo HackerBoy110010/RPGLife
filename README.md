@@ -23,8 +23,8 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 - **25 Charaktere** mit einzigartigen Fähigkeiten: Skill-Boni, Gold-Boni, Streak-Verstärkung, Nacht-Boni und mehr
 - **4 Seltenheits-Stufen:** Gewöhnlich, Selten, Episch, Legendär – je seltener, desto krasser die Fähigkeit
 - **Packs öffnen:** spannende Eskalations-Animationen – jede Stufe durchläuft alle niedrigeren Stufen mit steigender Intensität, Partikeln und Glow
-- **Unbegrenztes Leveln:** Duplikate (aus Packs oder Kauf) steigern das Fähigkeits-Level mit harmonischer Kurve – der Zuwachs nimmt ab, hört aber nie auf
-- **10er-Pack:** 10 Packs auf einmal mit Sofort-Übersicht (Legendäre kriegen trotzdem ihre Animation)
+- **Unbegrenztes Leveln:** Duplikate (aus Packs oder Kauf) steigern das Fähigkeits-Level mit harmonischer Kurve – der Zuwachs nimmt ab, hört aber nie auf. Gacha-Grind: Level N → N+1 braucht N Karten desselben Charakters
+- **10er-Pack:** 10 Packs auf einmal – alle Animationen laufen nacheinander (jede einzeln überspringbar, „Alle anzeigen" springt direkt zur Übersicht)
 - **Errungenschafts-Charaktere:** 15 Charaktere werden durch Errungenschaften freigeschaltet (nach Schwierigkeit einsortiert: von „erste Challenge" bis „100 Tage aktiv")
 - **6 kaufbare Charaktere:** Kobold, Pirat/in, Fee, Werwolf/in, Vampir/in und Phönix (legendär!)
 - **5 neue Errungenschaften:** Untoter (geheim), Eins mit der Natur, Eiskalt, Monument, Zeitzeuge
@@ -85,6 +85,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 | Version | Neu |
 |---|---|
+| **5.2** | **Bugfix:** Pack-Animation zeigte `Gew&ouml;hnlich` statt „Gewöhnlich" (HTML-Entity wurde als Text ausgegeben) · restliche Umlaute überall korrigiert (Buttons, Tutorial, Designer, Vorlagen) |
 | **5.1** | Gacha-Grind: höhere Level brauchen mehr Karten (Lv N → N+1 braucht N Karten) · Pack-Animation epischer (Fullscreen-Blur, wachsendes Pack, Stage-Flash, Screen-Shake) · Packs direkt im Shop · Umlaute in der App korrigiert · Tutorial-Positionierung robuster (Tablet-fest) · Tutorial startet nicht mehr bei Bestandsnutzern · Update-Banner persistent · Raritäts-Badges lesbar (Roboto) · Wochentag-Editor ohne Flackern |
 | **5.0** | **GROSSES UPDATE:** Charakter-System (25 Charaktere, Fähigkeiten, Packs mit Eskalations-Animationen, Raritäten, 57 Sprites) · Design-System (5 Stile × 9 Farbsets, eigene Marken-Icons, Liquid Glass für iPhone) · Wochentage für Dailies + Quest-Editor · Tutorial (8 Kapitel, Spotlight + Pfeile) · Held-Tab Untertabs · Tagesquest streichen/löschen · Update-Banner |
 | **4.51** | Charakter-Sicherung für Bestandsnutzer |
@@ -100,7 +101,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 - **Android APK:** `android/build.sh` baut eine signierte APK aus den Web-Assets (PWA-first)
 - **PWA:** dieselbe Codebasis läuft auch als Progressive Web App im Browser
-- **Tests:** 21 Test-Suiten mit über 700 Tests (`tests/test-*.js`)
+- **Tests:** 21 Test-Suiten mit über 850 Tests (`tests/test-*.js`)
 
 ## Projektstruktur
 
