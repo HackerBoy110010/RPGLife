@@ -85,6 +85,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 | Version | Neu |
 |---|---|
+| **5.1** | Gacha-Grind: höhere Level brauchen mehr Karten (Lv N → N+1 braucht N Karten) · Pack-Animation epischer (Fullscreen-Blur, wachsendes Pack, Stage-Flash, Screen-Shake) · Packs direkt im Shop · Umlaute in der App korrigiert · Tutorial-Positionierung robuster (Tablet-fest) · Tutorial startet nicht mehr bei Bestandsnutzern · Update-Banner persistent · Raritäts-Badges lesbar (Roboto) · Wochentag-Editor ohne Flackern |
 | **5.0** | **GROSSES UPDATE:** Charakter-System (25 Charaktere, Fähigkeiten, Packs mit Eskalations-Animationen, Raritäten, 57 Sprites) · Design-System (5 Stile × 9 Farbsets, eigene Marken-Icons, Liquid Glass für iPhone) · Wochentage für Dailies + Quest-Editor · Tutorial (8 Kapitel, Spotlight + Pfeile) · Held-Tab Untertabs · Tagesquest streichen/löschen · Update-Banner |
 | **4.51** | Charakter-Sicherung für Bestandsnutzer |
 | **4.50** | Sync entschärft (keine Anfragen ohne Änderung, 429-Rückkühlung) |
