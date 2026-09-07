@@ -85,6 +85,8 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 | Version | Neu |
 |---|---|
+| **5.4** | **Bugfix Backup-Import:** Backups, die auf dem Weg durch Notiz-Apps/Chats beschädigt wurden (Anführungszeichen ohne Escape-Zeichen, HTML-Zeichen wie `&lt;`), werden automatisch repariert und importiert · klare Fehlermeldungen: abgeschnittene Backups und fremdes JSON werden eindeutig benannt |
+| **5.3** | **Bugfix Neuinstallation:** OG-Sicherung griff auch bei frischen Installationen (alle 27 Charaktere geschenkt) – jetzt nur noch für echte Alt-Spielstände · App-Crash beim zweiten Start neuer Nutzer behoben (Tutorial-Variable zu früh gelesen) · Tutorial startet jetzt direkt nach dem Onboarding (statt nie oder erst beim zweiten Öffnen) · Onboarding bietet nur die 4 Starter-Avatare an |
 | **5.2** | **Bugfix:** Pack-Animation zeigte `Gew&ouml;hnlich` statt „Gewöhnlich" (HTML-Entity wurde als Text ausgegeben) · restliche Umlaute überall korrigiert (Buttons, Tutorial, Designer, Vorlagen) |
 | **5.1** | Gacha-Grind: höhere Level brauchen mehr Karten (Lv N → N+1 braucht N Karten) · Pack-Animation epischer (Fullscreen-Blur, wachsendes Pack, Stage-Flash, Screen-Shake) · Packs direkt im Shop · Umlaute in der App korrigiert · Tutorial-Positionierung robuster (Tablet-fest) · Tutorial startet nicht mehr bei Bestandsnutzern · Update-Banner persistent · Raritäts-Badges lesbar (Roboto) · Wochentag-Editor ohne Flackern |
 | **5.0** | **GROSSES UPDATE:** Charakter-System (25 Charaktere, Fähigkeiten, Packs mit Eskalations-Animationen, Raritäten, 57 Sprites) · Design-System (5 Stile × 9 Farbsets, eigene Marken-Icons, Liquid Glass für iPhone) · Wochentage für Dailies + Quest-Editor · Tutorial (8 Kapitel, Spotlight + Pfeile) · Held-Tab Untertabs · Tagesquest streichen/löschen · Update-Banner |
@@ -101,7 +103,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 - **Android APK:** `android/build.sh` baut eine signierte APK aus den Web-Assets (PWA-first)
 - **PWA:** dieselbe Codebasis läuft auch als Progressive Web App im Browser
-- **Tests:** 21 Test-Suiten mit über 850 Tests (`tests/test-*.js`)
+- **Tests:** 22 Test-Suiten mit über 900 Tests (`tests/test-*.js`)
 
 ## Projektstruktur
 
