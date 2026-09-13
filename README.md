@@ -20,9 +20,9 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 - **Zufalls-Quests:** täglich 2 überraschende Aufgaben mit Bonus-XP, neu würfeln per Reroll
 
 ### Charaktere und Packs
-- **25 Charaktere** mit einzigartigen Fähigkeiten: Skill-Boni, Gold-Boni, Streak-Verstärkung, Nacht-Boni und mehr
-- **4 Seltenheits-Stufen:** Gewöhnlich, Selten, Episch, Legendär – je seltener, desto krasser die Fähigkeit
-- **Packs öffnen:** spannende Eskalations-Animationen – jede Stufe durchläuft alle niedrigeren Stufen mit steigender Intensität, Partikeln und Glow
+- **Charaktere mit einzigartigen Fähigkeiten:** Skill-Boni, Gold-Boni, Streak-Verstärkung, Nacht-Boni und mehr
+- **Seltenheits-Stufen:** von Gewöhnlich bis Legendär – je seltener, desto krasser die Fähigkeit
+- **Packs öffnen:** Pack-Öffnung 2.0 mit Aufreiß-Effekt, Glanz und Charakterkarten im Seltenheits-Rahmen – Karten drehen sich in 3D rein, der 10er-Pack zeigt die Kartenreihe mit gestaffeltem Einflug
 - **Unbegrenztes Leveln:** Duplikate (aus Packs oder Kauf) steigern das Fähigkeits-Level mit harmonischer Kurve – der Zuwachs nimmt ab, hört aber nie auf. Gacha-Grind: Level N → N+1 braucht N Karten desselben Charakters
 - **10er-Pack:** 10 Packs auf einmal – alle Animationen laufen nacheinander (jede einzeln überspringbar, „Alle anzeigen" springt direkt zur Übersicht)
 - **Errungenschafts-Charaktere:** 15 Charaktere werden durch Errungenschaften freigeschaltet (nach Schwierigkeit einsortiert: von „erste Challenge" bis „100 Tage aktiv")
@@ -65,12 +65,14 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 - **Merge statt Überschreiben:** Streaks werden vereint, Zähler konservativ zusammengeführt
 - **Charakter-Sync:** Fähigkeits-Level werden über Geräte synchronisiert (höheres Level gewinnt)
 - **Offline-first:** die App funktioniert immer und überall ohne Netz
-- **Backup/Import:** kompletter Spielstand als Text zum Wegspeichern
+- **Backup/Import:** kompletter Spielstand als verschlüsseltes Backup (AES-256-GCM, Manipulationsschutz) – als Text oder Datei, Import auch aus alten Klartext-Backups
 
 ### Updates
 - **Update-Prüfung bei jedem App-Öffnen** gegen dieses Repository
 - **System-Benachrichtigung** + **persistentes Banner in jedem Tab** wenn ein Update verfügbar ist
 - Download-Button direkt im Banner und in den Einstellungen
+- **Beta-Tester-Schalter** (Einstellungen > Updates): Vorab-Versionen (Pre-Releases) von GitHub erhalten und herunterladen – Beta-Tester melden Feedback automatisch über das eigene Beta-Formular, alle anderen bekommen wie gewohnt nur stabile Releases und das normale Formular
+- **Was ist neu?:** Nach jedem Update öffnet sich einmalig ein Fenster mit den Neuerungen der neuen Version – jederzeit über Einstellungen > Updates > WAS IST NEU? nachlesbar
 
 ### Darüber hinaus
 - **Nachrichten-Archiv:** alle Meldungen zum Nachlesen, mit Zähler-Badge
@@ -85,6 +87,9 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 | Version | Neu |
 |---|---|
+| **5.6** | **GROSSES UPDATE:** 6 auswählbare App-Icons (inkl. Original) · Beta-Tester-Schalter für Pre-Releases von GitHub + eigenes Beta-Feedback-Formular · „Was ist neu?“-Fenster nach jedem Update (einmalig) · Pack-Öffnung 2.0 mit Charakterkarten und Seltenheits-Rahmen · Widget-Designer mit 5 Stilen (Pixel, Nothing, Samsung, Google, iPhone) · Quest-Frequenzen (X-mal/Woche, alle N Tage) · Editoren für Projekte, Challenges und Unterquests · Plan-Challenges mit Gegenständen, Fehl-Regeln und Abschluss-Statistik · Erinnerungen 2.0 (Ruhezeiten, Quest-Reminder, ABHAKEN-Aktion) · Tagesquest-Rerolls + 10er-Pack-Bundle |
+| **5.5.1** | **Hotfix:** Backup-Text wird beim Öffnen automatisch geladen (TEXT MARKIEREN/Kopieren geht sofort) · Charakter-Screen zeigt Level nach Kauf sofort (statt erst nach neuem Öffnen) · Text „erhält seine Fähigkeit“ statt „behält“ |
+| **5.5** | **Sicherheits-Update (Anti-Cheating):** Backups immer verschlüsselt (AES-256-GCM) – Spielstand nicht mehr im Texteditor manipulierbar · Backup als Datei exportieren/importieren (Android: Downloads-Ordner + Dateiauswahl, Browser: Download) · Admin-Modus: Geheimcode im Namensfeld schaltet in den Einstellungen ein Admin-Panel frei (XP, Gold, Skills, Charaktere, Errungenschaften, Statistik, Roh-Daten) – Anzeigename wird zu „Admin“ · Alte Klartext-Backups importieren weiterhin |
 | **5.4** | **Bugfix Backup-Import:** Backups, die auf dem Weg durch Notiz-Apps/Chats beschädigt wurden (Anführungszeichen ohne Escape-Zeichen, HTML-Zeichen wie `&lt;`), werden automatisch repariert und importiert · klare Fehlermeldungen: abgeschnittene Backups und fremdes JSON werden eindeutig benannt |
 | **5.3** | **Bugfix Neuinstallation:** OG-Sicherung griff auch bei frischen Installationen (alle 27 Charaktere geschenkt) – jetzt nur noch für echte Alt-Spielstände · App-Crash beim zweiten Start neuer Nutzer behoben (Tutorial-Variable zu früh gelesen) · Tutorial startet jetzt direkt nach dem Onboarding (statt nie oder erst beim zweiten Öffnen) · Onboarding bietet nur die 4 Starter-Avatare an |
 | **5.2** | **Bugfix:** Pack-Animation zeigte `Gew&ouml;hnlich` statt „Gewöhnlich" (HTML-Entity wurde als Text ausgegeben) · restliche Umlaute überall korrigiert (Buttons, Tutorial, Designer, Vorlagen) |
@@ -103,7 +108,8 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 - **Android APK:** `android/build.sh` baut eine signierte APK aus den Web-Assets (PWA-first)
 - **PWA:** dieselbe Codebasis läuft auch als Progressive Web App im Browser
-- **Tests:** 22 Test-Suiten mit über 900 Tests (`tests/test-*.js`)
+- **Tests:** 32 Test-Suiten mit über 1220 Tests (`tests/test-*.js`)
+- **Pre-Releases (Beta):** In GitHub einen neuen Release anlegen, Tag z.B. `v5.7-beta1`, Haken „Pre-Release“ setzen und `LifeRPG.apk` anhängen. Nutzer mit aktivem Beta-Tester-Schalter bekommen das Update sofort angeboten, alle anderen erst bei einem stabilen Release. Für jede neue Version einen Eintrag in `CHANGELOG` (in `liferpg/app.js`) ergänzen – er erscheint nach dem Update einmalig als „Was ist neu?“-Fenster.
 
 ## Projektstruktur
 
