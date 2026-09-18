@@ -87,6 +87,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 | Version | Neu |
 |---|---|
+| **5.6.1** | **Feinschliff-Update:** Wochen-Übersicht auf der Challenge-Karte (Mo-So-Kästchen, vergangene Check-ins sichtbar) · Pack-Öffnung komplett neu (Stufen automatisch – optional manuell –, oben glatt aufgeschnitten, echte Sammelkarte im 2:3-Format, race-frei bei schnellem Tippen) · Monochrome-Ebenen für alle App-Icons (Nothing-OS-Schwarzweiß + Android-Themed-Icons mit sauberen Silhouetten) · Benachrichtigungs-Icon als weiße Silhouette statt schwarzem Kasten |
 | **5.6** | **GROSSES UPDATE:** 6 auswählbare App-Icons (inkl. Original) · Beta-Tester-Schalter für Pre-Releases von GitHub + eigenes Beta-Feedback-Formular · „Was ist neu?“-Fenster nach jedem Update (einmalig) · Pack-Öffnung 2.0 mit Charakterkarten und Seltenheits-Rahmen · Widget-Designer mit 5 Stilen (Pixel, Nothing, Samsung, Google, iPhone) · Quest-Frequenzen (X-mal/Woche, alle N Tage) · Editoren für Projekte, Challenges und Unterquests · Plan-Challenges mit Gegenständen, Fehl-Regeln und Abschluss-Statistik · Erinnerungen 2.0 (Ruhezeiten, Quest-Reminder, ABHAKEN-Aktion) · Tagesquest-Rerolls + 10er-Pack-Bundle |
 | **5.5.1** | **Hotfix:** Backup-Text wird beim Öffnen automatisch geladen (TEXT MARKIEREN/Kopieren geht sofort) · Charakter-Screen zeigt Level nach Kauf sofort (statt erst nach neuem Öffnen) · Text „erhält seine Fähigkeit“ statt „behält“ |
 | **5.5** | **Sicherheits-Update (Anti-Cheating):** Backups immer verschlüsselt (AES-256-GCM) – Spielstand nicht mehr im Texteditor manipulierbar · Backup als Datei exportieren/importieren (Android: Downloads-Ordner + Dateiauswahl, Browser: Download) · Admin-Modus: Geheimcode im Namensfeld schaltet in den Einstellungen ein Admin-Panel frei (XP, Gold, Skills, Charaktere, Errungenschaften, Statistik, Roh-Daten) – Anzeigename wird zu „Admin“ · Alte Klartext-Backups importieren weiterhin |
@@ -108,7 +109,7 @@ Dein Leben als Pixel-RPG. Gewohnheiten werden zu Dailies mit Streaks, Aufgaben z
 
 - **Android APK:** `android/build.sh` baut eine signierte APK aus den Web-Assets (PWA-first)
 - **PWA:** dieselbe Codebasis läuft auch als Progressive Web App im Browser
-- **Tests:** 32 Test-Suiten mit über 1220 Tests (`tests/test-*.js`)
+- **Tests:** 33 Test-Suiten mit über 1290 Tests (`tests/test-*.js`)
 - **Pre-Releases (Beta):** In GitHub einen neuen Release anlegen, Tag z.B. `v5.7-beta1`, Haken „Pre-Release“ setzen und `LifeRPG.apk` anhängen. Nutzer mit aktivem Beta-Tester-Schalter bekommen das Update sofort angeboten, alle anderen erst bei einem stabilen Release. Für jede neue Version einen Eintrag in `CHANGELOG` (in `liferpg/app.js`) ergänzen – er erscheint nach dem Update einmalig als „Was ist neu?“-Fenster.
 
 ## Projektstruktur
